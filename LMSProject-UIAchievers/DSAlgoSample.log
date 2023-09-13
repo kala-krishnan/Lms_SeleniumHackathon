@@ -1,0 +1,112 @@
+2023-09-12 20:24:45.982 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:45.987 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2023-09-12 20:24:45.988 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:45.989 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:45.989 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:45.989 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:45.990 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:45.991 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:45.993 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.003 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+2023-09-12 20:24:46.005 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.005 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.007 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.007 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.008 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.008 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.011 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.012 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.013 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.013 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.015 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.015 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.015 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.016 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.019 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2023-09-12 20:24:46.019 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.021 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.021 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.021 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2023-09-12 20:24:46.022 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2023-09-12 20:24:46.031 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Running:
+  /private/var/folders/08/68sg4s9159z8_4gs5gmj2rqm0000gn/T/testng-eclipse-1399064656/testng-customsuite.xml
+
+2023-09-12 20:24:46.054 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2023-09-12 20:24:48.544 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1212)] - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
+2023-09-12 20:24:48.583 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager.exportDriver(WebDriverManager.java:1265)] - Exporting webdriver.chrome.driver as /Users/krishna/.cache/selenium/chromedriver/mac64/116.0.5845.96/chromedriver
+2023-09-12 20:24:51.312 INFO [main] [com.lmsproject.driverfactory.DriverManager.launchBrowser(DriverManager.java:54)] - Launching browser:Chrome
+2023-09-12 20:24:51.736 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:52.008 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:52.124 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:52.686 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:52.727 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:52.755 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:53.133 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:53.170 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:53.193 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:53.560 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:53.593 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:53.618 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:53.967 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:54.004 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:54.022 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:54.341 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:54.376 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:54.399 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:54.718 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:54.758 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:54.784 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:55.091 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:55.133 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:55.153 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:55.479 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:55.509 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:55.526 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:55.849 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:55.907 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:55.924 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:56.239 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:56.275 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:56.293 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:56.629 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:56.667 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:56.685 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:57.017 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:57.055 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:57.073 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:57.390 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:57.423 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:57.440 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:57.789 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:57.824 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:57.844 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:58.188 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:58.224 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:24:58.242 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:58.550 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:58.629 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:58.923 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:58.989 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:59.296 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:59.347 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:24:59.683 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:24:59.738 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:25:00.086 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:25:00.142 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:25:00.427 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:25:00.480 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:25:00.798 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:25:00.858 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:25:01.154 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:25:01.191 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:25:01.208 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:25:01.515 INFO [main] [com.lmsproject.apphooks.Hooks.beforeScenario(Hooks.java:35)] - Browser is launched
+2023-09-12 20:25:01.558 INFO [main] [com.lmsproject.pageobjects.LoginPage_Pageobject.openLMSPage(LoginPage_Pageobject.java:73)] - LMS Application is successfully Launched
+2023-09-12 20:25:01.575 ERROR [main] [com.lmsproject.apphooks.Hooks.addScreenShot(Hooks.java:48)] - Scenario failed
+2023-09-12 20:25:32.011 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.internal.ExitCodeListener@123426a9: 0 ms
+2023-09-12 20:25:32.030 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@51b11186: 18 ms
+2023-09-12 20:25:32.116 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.reporters.jq.Main@382608d0: 86 ms
+2023-09-12 20:25:32.128 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.reporters.FailedReporter@7ed5cc8c: 12 ms
+2023-09-12 20:25:32.152 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.reporters.XMLReporter@f391e52: 23 ms
+2023-09-12 20:25:32.171 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3182143c: 17 ms
+2023-09-12 20:25:32.207 INFO [main] [org.testng.log4testng.Logger.info(Logger.java:112)] - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@23e297d9: 35 ms
