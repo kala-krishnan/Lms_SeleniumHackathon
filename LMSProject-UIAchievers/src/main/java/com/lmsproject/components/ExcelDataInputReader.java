@@ -2,6 +2,7 @@ package com.lmsproject.components;
 
 import java.util.Properties;
 
+import com.lmsproject.utility.CommonUtils;
 import com.lmsproject.utility.ExcelFileReader;
 
 
@@ -21,13 +22,14 @@ public class ExcelDataInputReader {
 	public static String recording;
 	public static String batchStatus;
 	static Properties properties = new Properties();
+	static String excelURLFile = CommonUtils.getexcelfilepath(); 
 	
 	public static void loadProperties()  {
 		
 		//FileReader reader= null;
 	ExcelFileReader excel = null;
 		
-		String excelURL = "//src//test//resources//ExcelData//UI_lms.xlsx";
+		String excelURL = excelURLFile;
 		String path=System.getProperty("user.dir");
 		excel= new ExcelFileReader(path+excelURL,"LMS-PROJECT");
 		

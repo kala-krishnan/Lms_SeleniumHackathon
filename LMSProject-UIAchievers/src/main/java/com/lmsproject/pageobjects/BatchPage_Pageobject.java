@@ -14,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.lmsproject.components.ExcelDataInputReader;
+import com.lmsproject.utility.CommonUtils;
 import com.lmsproject.utility.CommonWebElements;
 
 
@@ -76,7 +77,10 @@ public class BatchPage_Pageobject {
 	WebElement getBatchIDfromDeleteDialog;
 	@FindBy(xpath ="//div[@class='rt-tr-group']")
 	List<WebElement> getBatchList;
-
+	String applicationURL = CommonUtils.getApplicationPage();
+	String batchActStatus = CommonUtils.getBatchactiveStatus();
+	String batchInActStatus = CommonUtils.getBatchinactiveStatus();
+	String batchTitleURL =CommonUtils.getBatchtitleinURL();
 	
 	
 	String successMessage="";
@@ -94,7 +98,7 @@ public class BatchPage_Pageobject {
 	
 	public void landingDashboardPage()
 	{
-		driver.get("https://example.com/login");
+		driver.get(applicationURL);
 	}
 	public String clickBatchLink()
 	{
@@ -103,7 +107,7 @@ public class BatchPage_Pageobject {
 		String currentURL = driver.getCurrentUrl();
 		if(currentURL.contains(urlText))
 		{
-			successMessage = "ManageBatch";
+			successMessage = batchTitleURL;
 		}
 		else
 		{
@@ -190,7 +194,7 @@ public class BatchPage_Pageobject {
 	{
 		driver.get("https://example.com/login");
 	}
-	public void validBatchCredentials()
+	public String validBatchCredentials()
 	{
 		batchName.sendKeys((ExcelDataInputReader.getBatchName()));
 		
@@ -207,6 +211,7 @@ public class BatchPage_Pageobject {
 		}
 		no_of_Classes.sendKeys(ExcelDataInputReader.getNoofclasses());
 		saveButton.click();
+		return ExcelDataInputReader.getBatchName();
 	}
 	public void validBatchCredentialsToEdit(String batchNam,String BatchDesc,String ProgramName,String Status,String NoofClasses)
 	{
@@ -214,16 +219,27 @@ public class BatchPage_Pageobject {
 		batchDescription.sendKeys(BatchDesc);
 		Select dropDown = new Select(programNameDropDownElement);
 		dropDown.selectByVisibleText(ProgramName);
-		if(Status.equalsIgnoreCase("Active"))
+		if(Status.equalsIgnoreCase(batchActStatus))
 		{
 			batchActiveStatus.click();
 		}
-		else if(Status.equalsIgnoreCase("InActive"))
+		else if(Status.equalsIgnoreCase(batchInActStatus))
 		{
 			batchInActiveStatus.click();
 		}
 		no_of_Classes.sendKeys(NoofClasses);
 		saveButton.click();
+	}
+	public boolean updateBatchFields(String BatchId)
+	{
+		if(getBatchList.contains(BatchId))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	public String getSuccessMessage()
 	{

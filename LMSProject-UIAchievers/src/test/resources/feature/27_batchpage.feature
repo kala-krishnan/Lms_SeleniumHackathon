@@ -21,17 +21,17 @@ Feature: Delete Multiple Batches Page Validation
 Background: Logged on the LMS Portal
 						Admin is in the dashboard after login before clicking batch
 						Admin clicks "Batch" in navigation bar
-						
+	 @valid					
 Scenario: Validate row level edit icon in manage batch page
 			Given The edit icon on row level in manage batch data table is enabled
 			When Admin clicks the rownumber 2 edit icon in manage batch page
 			Then A new pop up with batch details appears
-			
+	 @valid		
 			Scenario: Check the fields in the new pop up with batch details are updated
 			Given The admin is in the pop up edit batch page
 			When Admin clicks the save button in edit batch page with valid details from excel
 			Then The updated batch fields should appear on the data table
-			
+	 @valid		
 			Scenario: Check the fields in the new pop up with batch details are updated
 			Given The admin is in the pop up edit batch page
 			When Admin clicks the save button in edit batch page with valid details
@@ -43,7 +43,7 @@ Scenario: Validate row level edit icon in manage batch page
 			Then The updated batch fields should appear on the data table
 			
 			
-			
+	 @invalid		
 			Scenario Outline: The error message will appear when the invaild details are given in the edit batch
 	  Given The edit pop up with batch details appear 
     When The admin enters "<Name>","<Description>","<Program Name>","<Status>","<No of Classes>" in batch edit pop up
