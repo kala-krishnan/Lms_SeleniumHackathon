@@ -36,3 +36,4 @@ Scenario: Validate the delete icon below the header in manage batch page
 			Given  checkbox indexes 3 , 4 , 6 shold be selected
 			When click delete icon below "Manage Batch" header
 			Then The respective rows in the manage batch data table is deleted						
+			

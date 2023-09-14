@@ -21,6 +21,7 @@ Feature: Batch Page Validation
 Background: Logged on the LMS Portal
 
 
+
 		Scenario: Verify admin is landing in Batch Page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  

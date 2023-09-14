@@ -222,6 +222,7 @@ public class StudentPage_Pageobject {
 
 		public void studentPage() {
 //			driver.navigate().to("StudentPage");
+			
 			studentPage.click();
 			String studentPageTitle = driver.getTitle();
 			System.out.println("Student Page title is" + studentPageTitle);

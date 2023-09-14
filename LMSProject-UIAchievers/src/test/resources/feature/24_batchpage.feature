@@ -29,7 +29,6 @@ Scenario: Validate if the batch fields exist in pop
     Then  The pop up should include the fields "Name","Description","Program Name","Status","No of Classes"
     
     
-    
 		Scenario: Adding New Batch
  		Given The admin is in Add New Batch Pop up page
  		When The user enter all the valid batch details 

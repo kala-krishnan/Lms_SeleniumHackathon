@@ -43,6 +43,7 @@ Scenario: Validate row level edit icon in manage batch page
 			Then The updated batch fields should appear on the data table
 			
 			
+			
 			Scenario Outline: The error message will appear when the invaild details are given in the edit batch
 	  Given The edit pop up with batch details appear 
     When The admin enters "<Name>","<Description>","<Program Name>","<Status>","<No of Classes>" in batch edit pop up

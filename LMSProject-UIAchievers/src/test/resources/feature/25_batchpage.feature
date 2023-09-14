@@ -35,6 +35,7 @@ Scenario: Validate row level delete icon in manage Batch
 			Scenario: Validate reject alert in delete pop up message in batch
 			Given Admin clicks the delete icon in batch
 			When  Click No option in batch delete confirmation page
-			Then Batch is still listed in data table						
+			Then Batch is still listed in data table				
+					
 						
 						

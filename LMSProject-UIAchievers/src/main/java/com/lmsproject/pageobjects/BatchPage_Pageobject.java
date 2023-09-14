@@ -193,6 +193,7 @@ public class BatchPage_Pageobject {
 	public void validBatchCredentials()
 	{
 		batchName.sendKeys((ExcelDataInputReader.getBatchName()));
+		
 		batchDescription.sendKeys(ExcelDataInputReader.getBatchDesc());
 		Select dropDown = new Select(programNameDropDownElement);
 		dropDown.selectByVisibleText(ExcelDataInputReader.getProgramName());
