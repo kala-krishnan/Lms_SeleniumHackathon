@@ -2,6 +2,7 @@ package com.lmsproject.utility;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -88,7 +89,7 @@ public class CommonWebElements {
 		@FindBy(xpath = "//paginator/button[4]") WebElement btnNextpage;
 		@FindBy(xpath = "//paginator/button[5]") WebElement btnLastspage;
 		@FindBy(xpath = "//paginator/button[6]") WebElement lblTotalCount;
-		
+		@FindBy(xpath="//button[@type='button']//span[@xpath='1']") WebElement x_icon;
 		@FindBys({
 			@FindBy(xpath = "//paginator/button") 
 	})List<WebElement> btnPagination;
@@ -165,6 +166,11 @@ public class CommonWebElements {
 			return false;
 		}
 	
+		public boolean getErrorMessage()
+		{
+			String actual_err_msg = driver.findElement(By.xpath("//errormessage")).getText();
+			return true;
+		}
 		
 		public String GetPageHeaderTitle() {
 			return lblPageHeaderTitle.getText();
@@ -430,6 +436,56 @@ public class CommonWebElements {
 			}
 			return"NA";
 		}
-
-
+		public Boolean isVisibleDeleteDialogBoxElements(){
+			DeleteDialogYes.isDisplayed();
+			DeleteDialogNo.isDisplayed();
+			return true;
+		}
+		public boolean IsVerifyProgramDialogBoxDisappear()
+		{	
+			driver.switchTo().alert().dismiss();
+			return true;
+			
+		}
+		public int getRandomIndex(int limit) {
+			Random random =new Random();
+			return random.nextInt(limit);
+		}
+		
+		public boolean IsMultiDeleteIconDisplayed() {
+			return iconMultipleDelete.isDisplayed();
+		}
+		
+		public boolean clickXbtn() {
+			 x_icon.click();
+			return true;
+		}
+		
+		public Boolean IsCheckBoxInTableRows(WebElement PageGridTable)
+		{
+			List<WebElement> checkboxes = PageGridTable.findElements(By.xpath("//checkbox"));
+			List<WebElement> rows = PageGridTable.findElements(By.tagName("//tr"));
+			
+			if(checkboxes.size() == rows.size())
+				return true;
+			else
+				return false;
+		}
+		
+		public String addProgramConfirmation(String save)
+		{
+			if (save.equalsIgnoreCase("Save"))
+			{
+				action.moveToElement(btnSave).build().perform();
+				//Wdwait.until(ExpectedConditions.invisibilityOf(btnSave));
+				//alert text message
+				return getSuccessMessage();
+			}
+			else 
+			{
+				action.moveToElement(btnCancel).build().perform();
+			}
+			return "NA";
+					
+		}
 }
