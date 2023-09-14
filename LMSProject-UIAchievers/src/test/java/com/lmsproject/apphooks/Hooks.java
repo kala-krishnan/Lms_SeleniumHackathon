@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.lmsproject.driverfactory.DriverManager;
+import com.lmsproject.utility.CommonUtils;
 
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -24,7 +25,7 @@ public class Hooks {
 	    public void beforeScenario() {
 	    	
 	    	try {
-	    	//	CommonUtils.loadProperties();
+	    		CommonUtils.loadProperties();
 	    		
 	    	
 	    	if(driver== null) {

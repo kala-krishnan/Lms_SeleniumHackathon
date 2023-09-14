@@ -1,6 +1,7 @@
 package com.lmsproject.driverfactory;
 
 import org.apache.logging.log4j.LogManager;
+
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 
+import com.lmsproject.utility.CommonUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -21,7 +23,7 @@ private static final Logger LOG=LogManager.getLogger(DriverManager.class);
 
 public static WebDriver launchBrowser() {
 	try {
-		String browser_Name = "Chrome";
+		String browser_Name = CommonUtils.BROWSER;
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		chromeOptions.setAcceptInsecureCerts(true);

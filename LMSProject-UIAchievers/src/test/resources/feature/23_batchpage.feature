@@ -21,52 +21,52 @@ Feature: Batch Page Validation
 Background: Logged on the LMS Portal
 
 
-
+ @valid
 		Scenario: Verify admin is landing in Batch Page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  The admin should see the "Manage Batch" in the URL
-    
+  @valid   
 		Scenario: Validate the header in the batch page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  The admin should see the "Manage Batch" in the header
-    
+  @valid   
 		Scenario: Validate the pagination in the batch page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  The admin should see the pagination controls in the Manage batch data table
-    
+  @valid   
  		Scenario: Validate the data table headers in the batch page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  The admin should see the data table headers in "Batch" as Batch Name,Batch Description,Batch Status,No of Classes,Program Name,Edit ,Delete
-
+ @valid
 		Scenario: Validate the delete button in the batch page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  The admin should be able to see the "Delete" icon button in Manage batch is disabled       
-    
+   @valid  
  		Scenario: Validate "+New Batch" in Batch Page
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  The admin should be able to see the "+New Batch" button in Manage batch
-    
+  @valid   
  		Scenario: Validate data rows
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  Each row in the Manage batch table should have a checkbox
-    
+   @valid  
   	Scenario: Validate data rows
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  Each row in Manage batch table should have a Edit icon that is enabled
-    
+   @valid  
   	Scenario: Validate data rows
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "Batch" from navigation bar  
     Then  Each row in Manage batch table should have a delete icon that is enabled
-    
+    @valid 
    	Scenario: Validate pop up for adding batch
     Given The admin is on dashboard page after login to click batch
     When 	The admin clicks "+ New Batch" button  

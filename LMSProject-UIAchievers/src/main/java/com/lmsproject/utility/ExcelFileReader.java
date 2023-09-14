@@ -1,5 +1,6 @@
 package com.lmsproject.utility;
 import org.apache.poi.ss.usermodel.Cell;
+
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -11,8 +12,8 @@ public class ExcelFileReader {
 		static String path;
 		static XSSFWorkbook workbook;
 		static XSSFSheet sheet;
-		static String excelURL = ".//src//test//resources//ExcelData//ExcelData.xlsx";
 		private final DataFormatter dataFormatter;
+		static String excelURL = CommonUtils.getexcelfilepath();
 		
 
 	public ExcelFileReader(String excelPath, String sheetName) {
@@ -42,7 +43,6 @@ public class ExcelFileReader {
 		workbook= new XSSFWorkbook(path+excelURL);
 		sheet= workbook.getSheet("Login");	
 		int rowCount= sheet.getPhysicalNumberOfRows();
-		System.out.println("No.of rows:" +rowCount);
 		}
 	catch(Exception exp) {
 		System.out.println(exp.getMessage());
@@ -74,7 +74,6 @@ public class ExcelFileReader {
 	
 	public String getCellDataString2(int rowNumber, int columnNumber) {
         Cell cell = sheet.getRow(rowNumber).getCell(columnNumber);
-        System.out.println("Cell Vlaue" +cell);
 
         
         if (cell != null) {
