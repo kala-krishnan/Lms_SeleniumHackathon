@@ -10,10 +10,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonWebElements {
 	Actions action;
 	WebDriver driver;
+//	public static WebDriverWait Wdwait;
 	
 	public CommonWebElements(WebDriver driver)
 	{
@@ -24,6 +27,9 @@ public class CommonWebElements {
 		//PageFactory.initElements(new AjaxElementLocatorFactory(driver,20), this);
 	}
 	
+	@FindBy(xpath="//confirmdeletedialog//Title") WebElement DeleteDialogTitle;
+	@FindBy(xpath="//button[@id ='yes']") WebElement DeleteDialogYes;
+	@FindBy(xpath="//button[@id ='no']") WebElement DeleteDialogNo;
 	
 	//Page Common Header Element
 		@FindBy(xpath="//@Pagetitle[id = 'Manage Program']") WebElement lblPageHeaderTitle;
@@ -247,11 +253,12 @@ public class CommonWebElements {
 			return areEnabled;
 		}
 		public void ClickSingleEditButton(int index) {
-			action.moveToElement(iconEdit.get(index)).click().build().perform();
+			action.moveToElement(iconEdit.get(1)).click().build().perform();
 		}
 		
-		public void ClickSingleDeleteIcon(int index) {
+		public boolean ClickSingleDeleteIcon(int index) {
 			action.moveToElement(iconDelete.get(index)).click().build().perform();
+			return true;
 		}
 		
 		//Page Footer content Methods
@@ -398,6 +405,31 @@ public class CommonWebElements {
 			}
 		}
 		
+		public String GetDeleteDialogBoxTitle() {
+
+			try {
+				return DeleteDialogTitle.getText();	
+			}
+			catch(Exception NoSuchElementException) {
+				return "Delete confirmation dialog not displayed";
+			}
+				
+		}
+		
+		public String ClickDeleteConfirmation(String Confirmation) {
+
+			if (Confirmation.equalsIgnoreCase("Yes")) {
+				action.moveToElement(DeleteDialogYes).click().build().perform();
+//				Wdwait.until(ExpectedConditions.invisibilityOf(DeleteDialogYes));
+				WebElement MsgElement = driver.findElement(By.xpath("//ConfirmationMessage"));
+				return MsgElement.getText();
+			}
+			else if  (Confirmation.equalsIgnoreCase("No")) {
+				action.moveToElement(DeleteDialogNo).click().build().perform();;
+
+			}
+			return"NA";
+		}
 
 
 }
