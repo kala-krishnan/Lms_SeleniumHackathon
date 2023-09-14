@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CommonWebElements {
 	Actions action;
 	WebDriver driver;
-	public static WebDriverWait Wdwait;
+//	public static WebDriverWait Wdwait;
 	
 	public CommonWebElements(WebDriver driver)
 	{
@@ -253,7 +253,7 @@ public class CommonWebElements {
 			return areEnabled;
 		}
 		public void ClickSingleEditButton(int index) {
-			action.moveToElement(iconEdit.get(index)).click().build().perform();
+			action.moveToElement(iconEdit.get(1)).click().build().perform();
 		}
 		
 		public boolean ClickSingleDeleteIcon(int index) {
@@ -420,7 +420,7 @@ public class CommonWebElements {
 
 			if (Confirmation.equalsIgnoreCase("Yes")) {
 				action.moveToElement(DeleteDialogYes).click().build().perform();
-				Wdwait.until(ExpectedConditions.invisibilityOf(DeleteDialogYes));
+//				Wdwait.until(ExpectedConditions.invisibilityOf(DeleteDialogYes));
 				WebElement MsgElement = driver.findElement(By.xpath("//ConfirmationMessage"));
 				return MsgElement.getText();
 			}

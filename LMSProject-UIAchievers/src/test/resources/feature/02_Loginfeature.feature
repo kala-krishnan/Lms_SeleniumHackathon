@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+
 Feature: Authenticate and verify the login feature
   
 Scenario: Verify admin is able to land on homepage

@@ -147,10 +147,10 @@ public class UserPage_Stepdefinitions {
 	    
 	}
 
-	@Then("The newly added user should be present in the data table in Manage User page")
-	public void the_newly_added_user_should_be_present_in_the_data_table_in_manage_user_page() {
-	    
-	}
+//	@Then("The newly added user should be present in the data table in Manage User page")
+//	public void the_newly_added_user_should_be_present_in_the_data_table_in_manage_user_page() {
+//	    
+//	}
 
 	@When("Fill in all the fields with valid values and click submit")
 	public void fill_in_all_the_fields_with_valid_values_and_click_submit() {
@@ -170,10 +170,10 @@ public class UserPage_Stepdefinitions {
 	    
 	}
 
-	@Then("Error message should appear")
-	public void error_message_should_appear() {
-	    
-	}
+//	@Then("Error message should appear")
+//	public void error_message_should_appear() {
+//	    
+//	}
 
 	@When("Any of the mandatory fields are blank")
 	public void any_of_the_mandatory_fields_are_blank() {
