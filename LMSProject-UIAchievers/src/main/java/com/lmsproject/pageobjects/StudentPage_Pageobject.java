@@ -17,6 +17,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.lmsproject.utility.CommonUtils;
+
 
 public class StudentPage_Pageobject {
 		
@@ -47,9 +49,9 @@ public class StudentPage_Pageobject {
 		WebElement studentPage;
 		@FindBy(id = "searchBoxInput")
 		WebElement searchBox;
-
+		String applicationURL = CommonUtils.getApplicationPage();
 		public void dash() {
-			driver.get("https://example.com/login");
+			driver.get(applicationURL);
 		}
 
 		public void student_btn() {
@@ -104,9 +106,7 @@ public class StudentPage_Pageobject {
 			System.out.println("size of the drop down:" + dropdowns.size());
 			// Check if at least two dropdowns are present
 			if (dropdowns.size() >= 2) {
-				System.out.println("At least two dropdowns are present on the page.");
 			} else {
-				System.out.println("Less than two dropdowns are present on the page.");
 			}
 			return dropdowns;
 		}
@@ -117,10 +117,8 @@ public class StudentPage_Pageobject {
 			// Don't forget to close the WebDriver when done
 			driver.quit();
 			if (searchbox.isDisplayed()) {
-				System.out.println("The search box is present inside the dropdown for Admin.");
 				return searchBox;
 			} else {
-				System.out.println("The search box is not present inside the dropdown for Admin.");
 				return null;
 			}
 		}

@@ -21,17 +21,19 @@ Feature: Delete Multiple Batches Page Validation
 Background: Logged on the LMS Portal
 						Admin is in the dashboard after login before clicking batch
 						Admin clicks "Batch" in navigation bar
-						
+ @valid						
 Scenario: Validate the delete icon below the header in manage batch page
 			Given  admin in in the manage batch page
 			When None of the checkboxes are selected
 			Then The delete icon under the manage batch header should be disabled
 			
+ @valid			
 			Scenario: check for single row delete in manage batch page
 			Given  one of the checkbox/row 1 shold be selected
 			When click delete icon below "Manage Batch" header
 			Then The respective row in the manage batch data table is deleted
 			
+	 @valid		
 			Scenario: check for multiple rows delete in manage batch page
 			Given  checkbox indexes 3 , 4 , 6 shold be selected
 			When click delete icon below "Manage Batch" header

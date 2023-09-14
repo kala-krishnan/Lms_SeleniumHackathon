@@ -1,6 +1,7 @@
 package com.lmsproject.pageobjects;
 
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +10,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.lmsproject.utility.CommonUtils;
 
 public class UserPage_Pageobject {
 	
@@ -55,9 +58,10 @@ public class UserPage_Pageobject {
 	@FindBy(xpath="//table[@id='User']//th") WebElement userCol;
 	
 	//methods
+	String applicationURL = CommonUtils.getApplicationPage();
 	
 	public void openLMSPage() {
-		driver.get("https://example.com/login");	
+		driver.get(applicationURL);	
 	}
 	
 	public void clickUserBtn() {

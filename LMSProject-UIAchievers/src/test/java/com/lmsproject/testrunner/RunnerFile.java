@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"pretty","html:target/cucumber.html",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-				},
+				"rerun:target/failed_scenarios.txt"},
 		monochrome=false,  //console output color
 		features = "src/test/resources/feature", //location of feature files
 		glue= {"com.lmsproject.apphooks","com.lmsproject.stepdefinitions"} )

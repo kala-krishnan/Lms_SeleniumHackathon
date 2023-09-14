@@ -22,18 +22,18 @@ Background: Logged on the LMS Portal
 						Admin is in the dashboard after login before clicking batch
 						Admin clicks "Batch" in navigation bar
 						Admin clicks "+ New Batch" in manage Batch
-
-Scenario: Validate if the batch fields exist in pop
+ 	@valid
+		Scenario: Validate if the batch fields exist in pop
     Given The new pop up with batch details appear
     When 	The admin clicks "+ New Batch" button  
     Then  The pop up should include the fields "Name","Description","Program Name","Status","No of Classes"
     
-    
+   @valid  
 		Scenario: Adding New Batch
  		Given The admin is in Add New Batch Pop up page
  		When The user enter all the valid batch details 
  		Then the user sees the sucesss message "Batch Details Added Successfully"
- 		
+ 	 @invalid 	
  		Scenario Outline: Validate batch with invalid credentials
 	  Given The new pop up with batch details appear 
     When The admin enters "<Name>","<Description>","<Program Name>","<Status>","<No of Classes>" in batch add pop up

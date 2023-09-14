@@ -16,6 +16,8 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.lmsproject.utility.CommonUtils;
+
 
 public class LoginPage_Pageobject {
 	WebDriver driver;
@@ -54,7 +56,6 @@ public class LoginPage_Pageobject {
 	WebElement successAlertMessage;
 	
 	
-	String URL = "https://example.com/login";
 	String successPage = "";
 	String errorMessage="";
 	String successMessage="";
@@ -62,7 +63,7 @@ public class LoginPage_Pageobject {
     int respCode = 200;
 	String actualNameText = "User";
 	String actualPasswordText = "Password";
-	
+	String applicationURL = CommonUtils.getApplicationPage();
 	
 	
 	public LoginPage_Pageobject(WebDriver driver) {
@@ -70,7 +71,7 @@ public class LoginPage_Pageobject {
 		PageFactory.initElements(driver, this);
 	}
 	public void openLMSPage() {
-		driver.get(URL);
+		driver.get(applicationURL);
 		LOG.info("LMS Application is successfully Launched");
 	}
 	public String clickloginAuth()
@@ -83,7 +84,7 @@ public class LoginPage_Pageobject {
 	public String verifyURLNotBroken(int statusCode)
 	{
 		try {
-			urlConnectioCheck = (HttpURLConnection)(new URL(URL).openConnection());
+			urlConnectioCheck = (HttpURLConnection)(new URL(applicationURL).openConnection());
 			urlConnectioCheck.setRequestMethod("HEAD");
 			urlConnectioCheck.connect();
             respCode = urlConnectioCheck.getResponseCode();
@@ -208,7 +209,7 @@ public class LoginPage_Pageobject {
 	}
 	public void landLoginPage()
 	{
-		driver.get("https://example.com/login");
+		driver.get(applicationURL);
 	}
 	
 	public void validateUserandPassword(String userName,String Password)
