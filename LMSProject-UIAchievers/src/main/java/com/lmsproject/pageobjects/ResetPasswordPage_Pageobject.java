@@ -15,9 +15,9 @@ import java.util.HashMap;
 public class ResetPasswordPage_Pageobject {
 	
 	WebDriver driver;
+	
 	private final static Logger LOG = LogManager.getLogger(ResetPasswordPage_Pageobject.class);
 	
-
 	@FindBy(xpath="//input[@class='user1']")
 	WebElement txtTypeinNewPassword;
 	@FindBy(xpath="//input[@class='password1']")
