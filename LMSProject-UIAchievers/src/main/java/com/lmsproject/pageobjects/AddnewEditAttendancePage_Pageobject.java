@@ -62,6 +62,7 @@ public WebDriver driver;
 	String p="present";
 	@FindBy(xpath="//*[text()='Show Calendar']")WebElement calendar;
 	@FindBy(tagName="td")List<WebElement> columns;
+	ExcelDataInputReader readInput = new ExcelDataInputReader();
 	public void filldetailsAttendance(String typeofdata)
 	{
 		if(typeofdata.equalsIgnoreCase("all the values"))

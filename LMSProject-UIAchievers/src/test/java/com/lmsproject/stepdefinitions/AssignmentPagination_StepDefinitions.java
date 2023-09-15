@@ -30,7 +30,6 @@ public class AssignmentPagination_StepDefinitions {
 		app=new AssignmentPagination_Pageobject(driver);
 	}	
 	
-	
 	@Then("Admin logged on LMS portal")
 	public void admin_logged_on_lms_portal() {
 	   sa.assertAll("Admin logged on LMS portal");
@@ -41,24 +40,23 @@ public class AssignmentPagination_StepDefinitions {
 		 mp.dashboardurl();
 	}
 
-	@When("Admin clicks {string} button on the Navigation bar")
-	public void admin_clicks_button_on_the_navigation_bar(String string) {
+	@When("Admin clicks {string} button in the Navigation bar to check")
+	public void admin_clicks_button_in_the_navigation_bar_to_check(String string) {
 	   mp.clickassign(string);
 	}
 
-
-	@Then("Data table should display  page {int} when entries available")
-	public void data_table_should_display_page_when_entries_available(Integer int1) {
+	@Then("Data table should display  page {int} of Assigment when entries available")
+	public void data_table_should_display_page_of_assignment_when_entries_available(Integer int1) {
 		 app.IsFirstpageLoaded();
 	}
 
-	@Then("Entries are more than {int} in data table pagination controls enabled")
-	public void entries_are_more_than_in_data_table_pagination_controls_enabled(Integer int1) {
+	@Then("Entries are more than {int} in Assigment data table pagination controls enabled")
+	public void entries_are_more_than_in_Assignment_data_table_pagination_controls_enabled(Integer int1) {
 		 app.IsSecondPageButtonEnabled();
 	}
 
-	@Then("Pagination controls disabled if entries are less than {int} in data table")
-	public void pagination_controls_disabled_if_entries_are_less_than_in_data_table(Integer int1) {
+	@Then("Pagination controls disabled if entries are less than {int} in Assigment data table")
+	public void pagination_controls_disabled_if_entries_are_less_than_in_assignment_data_table(Integer int1) {
 		app.IsNextNavigationDisabled();
 	}
 	

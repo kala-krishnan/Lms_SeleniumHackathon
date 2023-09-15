@@ -3,7 +3,7 @@ Background: Admin is on dashboard page after Login and clicks Program on the nav
   
     Given Admin is on dashboard page after Login
     When Admin clicks Program on the navigation bar
-    Then Admin should see URL with "Manage Program"
+    Then Admin should see URL with "Manage Program"  in program module
 
 @validProgram
   Scenario: Validate Program Details Popup window

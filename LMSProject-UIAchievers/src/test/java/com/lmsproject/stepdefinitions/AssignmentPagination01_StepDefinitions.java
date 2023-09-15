@@ -44,8 +44,8 @@ public void admin_clicks_add_new_assignment_button() {
     app.ClickaddNewAssignButton();
 }
 
-@Given("Admin is in add Assignment details popup window")
-public void admin_is_in_add_assignment_details_popup_window() {
+@Given("Admin is in add Assignment details popup windows")
+public void admin_is_in_add_assignment_details_popup_windows() {
    LOG.info("Admin is in add Assignment details popup window");
 }
 
@@ -63,13 +63,12 @@ public void total_assignment_entries_above_next_page_is_enabled_on_multiples_of_
 	sa.assertEquals(app.IsSecondPageButtonEnabled(),true);
 }
 
-@When("Admin creates less than or equal to {int} new Assignment")
+@When("Admin creates less than or equals to {int} new Assignment")
 public void admin_creates_less_than_or_equal_to_new_assignment(Integer int1) {
    app.ClickaddNewAssignButton();
 }
-
-@Then("total Assignment entries  {int} or below next page is disabled")
-public void total_assignment_entries_or_below_next_page_is_disabled(Integer int1) {
+@Then("total Assignment entries  {int} or below next pages is disabled")
+public void total_assignment_entries_or_below_next_pages_is_disabled(Integer int1) {
     sa.assertEquals(app.IsNextNavigationDisabled(),true);
 }
 

@@ -46,8 +46,8 @@ public class DeleteAssignmentPage_StepDefinitions {
 	public void alert_should_have_button_to_reject(String string) {
 		sa.assertTrue(deleteConfirmDialogBox.isVisibleDialogBoxElements(),"Alert have No button to accept"); 
 	}
-	@When("Admin clicks {string} button")
-	public void admin_clicks_button(String string) {
+	@When("Admin clicks {string} button in delete assign")
+	public void admin_clicks_button_in_delete_assign(String string) {
 		deleteConfirmDialogBox.ClickDeleteConfirmation(string);
 	}
 	@Then("Redirected to assignment page and selected assignment details are {string} from the data table")
@@ -66,8 +66,8 @@ public class DeleteAssignmentPage_StepDefinitions {
 	public void admin_should_see_delete_icon_below_the_header_is_enabled() {
 		sa.assertTrue(commonElement.IsMultiDeleteIconEnabled(),"delete icon below the header is enabled");
 	}
-	@Given("Admin is in delete alert")
-	public void admin_is_in_delete_alert() {
+	@Given("Admin is in delete alert in delete assign")
+	public void admin_is_in_delete_alert_in_delete_assign() {
 	    driver.switchTo().alert();
 	} 
 }

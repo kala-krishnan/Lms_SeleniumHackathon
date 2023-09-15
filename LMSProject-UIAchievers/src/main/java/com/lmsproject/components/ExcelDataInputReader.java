@@ -21,8 +21,33 @@ public class ExcelDataInputReader {
 	public static String notes;
 	public static String recording;
 	public static String batchStatus;
+	public static String Comments;
+	public static String Assignmentname;
+    public static String gradeby;
+    public static String Assignmentduedate;
+    public static String AssignmentDescription;
+    public static String AssignmentFile1;
+    public static String AssignmentFile2;
+    public static String AssignmentFile3;
+    public static String AssignmentFile4;
+    public static String AssignmentFile5;
+    public static String classname;
+	public static String studentname;
+    
+
+
+
+
+
+
+	public static String getAttendancename() {
+		return Attendancename;
+	}
+	public static String Attendanceduedate;
+    public static String Attendancename;
 	static Properties properties = new Properties();
 	static String excelURLFile = CommonUtils.getexcelfilepath(); 
+	
 	
 	public static void loadProperties()  {
 		
@@ -49,6 +74,18 @@ public class ExcelDataInputReader {
 		notes = excel.getCellDataString(1, 10);
 		recording = excel.getCellDataString(1, 11);
 		batchStatus = excel.getCellDataString(1, 12);
+		Comments = excel.getCellDataString(1, 13);
+		Assignmentname=excel.getCellDataString2(1, 14);
+        gradeby =excel.getCellDataString(1, 15);
+        Assignmentduedate=excel.getCellDataString2(1, 16);
+        AssignmentDescription=excel.getCellDataString(1, 17);
+        AssignmentFile1 =excel.getCellDataString(1,18);
+        AssignmentFile2 =excel.getCellDataString(1,19);
+        AssignmentFile3 =excel.getCellDataString(1,20);
+        AssignmentFile4 =excel.getCellDataString(1,21);
+        AssignmentFile5 =excel.getCellDataString(1,22);
+        classname=excel.getCellDataString(1, 23);
+        studentname=excel.getCellDataString(1,24);
 }
 	
 	
@@ -108,7 +145,53 @@ public class ExcelDataInputReader {
 		return batchStatus;
 	}
 	
-	
-	
+	 public static String getAssignmentname() {
+	        return Assignmentname;
+	    }
+	    
+	    public static String getGradeby() {
+	        return gradeby;
+	    }
+	    
+	    public static String getAssignmentduedate() {
+	        return Assignmentduedate;
+	    }
+	    
+	    public static String getAssignmentDescription() {
+	        return AssignmentDescription;
+	    }
+	    
+	    public static String getAssignmentFile1() {
+	        return AssignmentFile1;
+	    }
+	    
+	    public static String getAssignmentFile2() {
+	        return AssignmentFile2;
+	    }
+	    
+	    public static String getAssignmentFile3() {
+	        return AssignmentFile3;
+	    }
+	    
+	    public static String getAssignmentFile4() {
+	        return AssignmentFile4;
+	    }
+	    
+	    public static String getAssignmentFile5() {
+	        return AssignmentFile5;
+	    }
+	    public static String getComments() {
+			return Comments;
 
+}
+	    public static String getClassname() {
+			return classname;
+		}
+	    public static String getStudentname() {
+			return studentname;
+		}
+
+		public static String getAttendanceduedate() {
+			return Attendanceduedate;
+		}
 }

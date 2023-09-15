@@ -5,7 +5,7 @@ Background: Admin is on dashboard page after Login and clicks Program on the nav
   
     Given Admin is on dashboard page after Login page.
     When Admin clicks Program page on the navigation bar. 
-    Then Admin should see URL with "Manage Program" page.
+    Then Admin should see URL with "Manage Program" page in program module.
 
 
   Scenario Outline: Search Program By Name

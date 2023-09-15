@@ -5,7 +5,7 @@
   Scenario: Verify landing in class page in lms portal
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks manage Class button on the navigation bar  
-    Then Admin should see URL with "Manage Class"
+    Then Admin should see URL with "Manage Class" to class
  
   Scenario: Capture the response time to navigate to Manage class page
      
@@ -15,17 +15,17 @@
   Scenario: Verify Manage Class Page Header to check Class page
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks Class button on the navigation bar 
-    Then Admin should see header with "Manage Class"  
+    Then Admin should see header with "Manage Class" too
  
   Scenario: Validate text in Manage Class page 
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks Class button on the navigation bar and get all text from the portal page
-    Then Admin should see correct spelling for the all the fields
+    Then Admin should see correct spelling for the all the fields in manage class
  
   Scenario: Verify delete icon below the header in Manage class Page
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks Class button on the navigation bar 
-    Then Admin should see disabled delete icon below the "Manage Class"
+    Then Admin should see disabled delete icon below the "Manage Class" in class
  
   Scenario: Verify checking search bar on the class page 
     Given Admin is on dashboard page after Login for Manage class
@@ -45,17 +45,17 @@
   Scenario: Verify Edit icon in the data table on class page
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks Class button on the navigation bar
-    Then Edit Icon in each row of data table only when entries are available
+    Then Edit Icon in each row of class data table only when entries are available
  
   Scenario: Verify Edit icon when no data in the table on class apge
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks Class button on the navigation bar
-    Then Edit Icon will not be present in data table
+    Then Edit Icon will not be present in manage class data table
  
   Scenario: Verify delete icon in the data table on class page
     Given Admin is on dashboard page after Login for Manage class
     When Admin clicks Class button on the navigation bar 
-    Then Delete Icon in each row of data table only  when entries are available
+    Then Delete Icon in each row of manage class data table only  when entries are available
  
   Scenario: Verify delete icon when no data in the table on class page
     Given Admin is on dashboard page after Login for Manage class

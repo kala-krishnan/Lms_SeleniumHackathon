@@ -68,22 +68,22 @@ public class DashboardPage_StepDefinitions {
 	    LOG.info("login page");
 	}
 
-	@Then("Maximum navigation time in milliseconds, defaults to {int} seconds")
-	public void maximum_navigation_time_in_milliseconds_defaults_to_seconds(Integer int1) {
+	@Then("Maximum navigation time in milliseconds, defaults to {int} seconds in Dasboard")
+	public void maximum_navigation_time_in_milliseconds_defaults_to_seconds_in_Dashboard(Integer int1) {
 	    dp.timer();
 	    Assert.assertEquals(int1,dp.pageLoadTime_Seconds);
 	    LOG.info("navigation time calculated");
 	}
 
-	@Then("HTTP response >= {int}. Then the link is broken")
-	public void http_response_then_the_link_is_broken(Integer int1) throws IOException {
+	@Then("HTTP response >= {int}. Then the link is broken for dashboard")
+	public void http_response_then_the_link_is_broken_for_dashboard(Integer int1) throws IOException {
 	   dp.linkbroker();
 	   Assert.assertEquals(int1, dp.code);
 	   LOG.info("link broken validatio");
 	}
 
-	@Then("Admin should see LMS -Learning management system  as title")
-	public void admin_should_see_lms_learning_management_system_as_title() {
+	@Then("Admin should see LMS -Learning management system  as title in Dashboard")
+	public void admin_should_see_lms_learning_management_system_as_title_in_Dashboard() {
 	  String title=dp.titlelms();
 	  Assert.assertEquals("LMS",title);
 	  LOG.info("Validating title");

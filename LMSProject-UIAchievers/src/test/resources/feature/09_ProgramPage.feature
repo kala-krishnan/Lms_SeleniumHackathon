@@ -9,7 +9,7 @@ Background: Logged on the LMS portal as Admin
   Scenario: Validate landing in Program page
     Given Admin users is on dashboard page after Login page.
     When Admin users clicks Program on the navigation bar.
-    Then Admin users should see URL with "Manage Program".
+    Then Admin users should see URL with "Manage Program" in program module.
 
   Scenario: Validate the heading in program page
   

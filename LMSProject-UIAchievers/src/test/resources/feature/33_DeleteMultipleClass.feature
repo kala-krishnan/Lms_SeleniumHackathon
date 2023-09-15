@@ -4,16 +4,16 @@
   Scenario: Verify delete multiple class  button is enabled
     Given Admin is in Manage Class page
     When Admin clicks single <1> row level check box in the data table in delete class window
-    Then Admin should see delete icon below the header is enabled
+    Then Admin should see delete icon below the class header is enabled
  
  Scenario: verify tick mark is visible after clicking on check box in delete class window 
     Given Admin is in Manage Class page
-    When Admin clicks single <1> row level check box in the data table in elete class window
+    When Admin clicks single <1> row level check box in the data table in delete class window
     Then Admin should see tick mark in check box in delete class window
     
  Scenario: verify admin able to click multiple check box in delete class window 
     Given Admin is in Manage Class page
-    When Admin clicks multiple row level check box in the data table
+    When Admin clicks multiple row level check box in the delete data table
     Then Admin should see tick mark in Check box  of the selected rows in delete class window
     
  Scenario: Verify accept alert in delete multiple class function by selecting single checkbox   

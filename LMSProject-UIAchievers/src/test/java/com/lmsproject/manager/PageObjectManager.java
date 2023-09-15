@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import com.lmsproject.pageobjects.AddOrEditProgramPage_Pageobject;
 import com.lmsproject.pageobjects.DashboardPage_Pageobject;
 import com.lmsproject.pageobjects.ForgotUsernameOrPasswordPage_Pageobject;
+import com.lmsproject.pageobjects.HomePage_Pageobject;
 import com.lmsproject.pageobjects.LoginPage_Pageobject;
 import com.lmsproject.pageobjects.ProgramPage_Pageobject;
 import com.lmsproject.pageobjects.ResetPasswordPage_Pageobject;
-import com.lmsproject.pageobjects.ResetPassword_Pageobject;
 
 public class PageObjectManager {
 	
@@ -37,14 +37,15 @@ public class PageObjectManager {
 		return loginPage;
 	}
 	
-	/*public DashboardPage_Pageobject getdashboardPage()
+	public DashboardPage_Pageobject getdashboardPage()
 	{
 		if(dashboardPage==null)
 		{
 			dashboardPage = new DashboardPage_Pageobject(driver);
 		}
-		return dashboardPage;*/
+		return dashboardPage;
 	}
+	
 	
 	public ProgramPage_Pageobject getProgramPage()
 	{
@@ -63,11 +64,11 @@ public class PageObjectManager {
 		
 		return addOrEditProgramPage;
 	}
-	public HomePage_PageObject getHomePage()
+	public HomePage_Pageobject getHomePage()
 	{
 		if(homePage==null)
 		{
-			homePage = new HomePage_PageObject(driver);
+			homePage = new HomePage_Pageobject(driver);
 		}
 		return homePage;
 	}
@@ -79,11 +80,11 @@ public class PageObjectManager {
 		}
 		return forgotUsernameOrPasswordPage_Pageobject;
 	}
-	public ResetPassword_Pageobject getResetPassword()
+	public ResetPasswordPage_Pageobject getResetPassword()
 	{
 		if(resetPassword_Pageobject==null)
 		{
-			resetPassword_Pageobject = new ResetPassword_Pageobject(driver);
+			resetPassword_Pageobject = new ResetPasswordPage_Pageobject(driver);
 		}
 		return resetPassword_Pageobject;
 	}

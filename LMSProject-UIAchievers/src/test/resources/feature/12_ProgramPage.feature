@@ -3,7 +3,7 @@ Background: Admin is on Manage Program Page after clicks Program on the navigati
 
 Given Admin is on Manage Program page.
     When Admin clicks Program on the navigation bar.
-    Then Admin should see URL with "Manage Program".
+    Then Admin should see URL with "Manage Program" in program module.
   
 @validProgram
 Scenario: Adding New Program

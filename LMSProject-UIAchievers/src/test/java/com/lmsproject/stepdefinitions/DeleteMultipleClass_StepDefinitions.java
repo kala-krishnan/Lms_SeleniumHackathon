@@ -34,8 +34,8 @@ public class DeleteMultipleClass_StepDefinitions {
 	public void admin_clicks_single_row_level_check_box_in_the_data_table_in_delete_class_window(Integer int1) {
    delpage.CheckSingleDeleteIcon(int1);
 	}
-	@Then("Admin should see delete icon below the header is enabled")
-	public void admin_should_see_delete_icon_below_the_header_is_enabled() {
+	@Then("Admin should see delete icon below the class header is enabled")
+	public void admin_should_see_delete_icon_below_the_class_header_is_enabled() {
 	     
 	    delpage.IsMultiDeleteIconDisplayed();
 	}
@@ -50,8 +50,8 @@ public class DeleteMultipleClass_StepDefinitions {
 	    delpage.CheckMutiSelectCheckBox();
 	}
 
-	@When("Admin clicks multiple row level check box in the data table")
-	public void admin_clicks_multiple_row_level_check_box_in_the_data_table() {
+	@When("Admin clicks multiple row level check box in the delete data table")
+	public void admin_clicks_multiple_row_level_check_box_in_the_delete_data_table() {
 	    delpage.ClickMultiSelectCheckBox();
 	}
 

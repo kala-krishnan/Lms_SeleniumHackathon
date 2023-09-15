@@ -6,7 +6,7 @@ Feature: Delete Program
   Scenario: Validating admin is in LoginPage.
     Given Admin is in dashboard Page after login.
     When Admin clicks program on the navigator bar.
-    Then Admin should be on Manage Program page 'Manage Program'.
+    Then Admin should be on Manage Program page 'Manage Program' in program module
 
   Scenario: Validate details for Confirm Deletion form
     Then Admin should see a message "Are you sure you want to delete <Program name>?".

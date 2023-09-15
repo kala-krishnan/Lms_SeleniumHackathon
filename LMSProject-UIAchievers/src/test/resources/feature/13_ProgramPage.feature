@@ -4,7 +4,7 @@ Feature: Edit New Program
   
     Given Admin is on dashboard page after Login.
     When Admin clicks Program on the navigation bar.
-    Then Admin should see URL with "Manage Program".
+    Then Admin should see URL with "Manage Program"  in program module
 
   Scenario: Validating admin is in LoginPage.
     Given Admin is in dashboard Page after login.

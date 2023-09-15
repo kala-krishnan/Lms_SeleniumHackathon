@@ -43,8 +43,8 @@ public class ManageAssignmentPage_StepDefinitions {
 	    sa.assertEquals("launch",mesg);
 	}
 
-	@Given("Admin is on dashboard page after Login")
-	public void admin_is_on_dashboard_page_after_login() {
+	@Given("Admin is on dashboard page after Login in manage assign")
+	public void admin_is_on_dashboard_page_after_login_in_manage_assign() {
 	    mp.dashboardurl();
 	    LOG.info("Admin is in Dashboard page");
 	}
@@ -139,8 +139,8 @@ public class ManageAssignmentPage_StepDefinitions {
 		  cm.ClickMutiSelectCheckBox();
 	}
 
-	@Then("Admin should see the pagination controls under the data table")
-	public void admin_should_see_the_pagination_controls_under_the_data_table() {
+	@Then("Admin should see the pagination controls under the assignment data table")
+	public void admin_should_see_the_pagination_controls_under_the_assignment_data_table() {
 	   cm.VerifyPaginationControlsPresent();
 	}
 

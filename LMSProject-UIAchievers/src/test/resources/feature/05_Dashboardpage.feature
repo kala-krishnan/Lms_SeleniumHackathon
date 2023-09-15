@@ -17,21 +17,21 @@ Given Admin is in login page to sign in
 When The admin enter valid credentials and clicks login button to enter dashboard
       | UIAchievers |
       | Test@1234 |
-Then  Maximum navigation time in milliseconds, defaults to 30 seconds
+Then  Maximum navigation time in milliseconds, defaults to 30 seconds in Dasboard
 @valid
 Scenario: Verify broken link
 Given Admin is in login page to sign in 
 When The admin enter valid credentials and clicks login button to enter dashboard
       | UIAchievers |
       | Test@1234 |
-Then HTTP response >= 400. Then the link is broken
+Then HTTP response >= 400. Then the link is broken for dashboard
 @valid
 Scenario: Verify LMS title 
 Given Admin is in login page to sign in 
 When The admin enter valid credentials and clicks login button to enter dashboard
       | UIAchievers |
       | Test@1234 |
-Then Admin should see LMS -Learning management system  as title 
+Then Admin should see LMS -Learning management system  as title in Dashboard 
 @valid
 Scenario: Verify  LMS title alignment
 Given Admin is in login page to sign in 

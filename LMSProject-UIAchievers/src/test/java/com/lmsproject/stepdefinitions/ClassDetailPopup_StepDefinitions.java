@@ -1,6 +1,7 @@
 package com.lmsproject.stepdefinitions;
 	 
 	import java.util.logging.Logger;
+
 	import org.apache.logging.log4j.LogManager;
 	import org.openqa.selenium.WebDriver;
 	import com.lmsproject.apphooks.Hooks;
@@ -92,5 +93,3 @@ package com.lmsproject.stepdefinitions;
 
 
 	}
-
-}

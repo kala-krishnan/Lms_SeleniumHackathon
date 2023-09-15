@@ -23,18 +23,18 @@ Scenario: Verify delete multiple class  button is enabled
 When Admin clicks single  row level check box in the data table
 Then Admin should see delete icon below the header is enabled
 Scenario: Verify accept alert in delete multiple class function by selecting single checkbox
-Given Admin is in delete alert
-When Admin clicks "yes" button
+Given Admin is in delete alert in delete assign
+When Admin clicks "yes" button in delete assign
 Then Redirected to assignment page and selected assignment details are "deleted" from the data table
 Scenario: Validate reject in alert
-Given Admin is in delete alert
-When Admin clicks "no" button
+Given Admin is in delete alert in delete assign
+When Admin clicks "no" button in delete assign
 Then Redirected to assignment page and selected assignment details are "not deleted" from the data table
 Scenario: Verify accept alert in delete multiple class function by selecting multiple checkbox
-Given Admin is in delete alert
-When Admin clicks "yes" button
+Given Admin is in delete alert in delete assign
+When Admin clicks "yes" button in delete assign
 Then Redirected to assignment page and selected assignment details are "deleted" from the data table
 Scenario: Verify reject alert in delete multiple class function by selecting multiple checkbox
-Given Admin is in delete alert
-When Admin clicks "no" button
+Given Admin is in delete alert in delete assign
+When Admin clicks "no" button in delete assign
 Then Redirected to assignment page and selected assignment details are "not deleted" from the data table

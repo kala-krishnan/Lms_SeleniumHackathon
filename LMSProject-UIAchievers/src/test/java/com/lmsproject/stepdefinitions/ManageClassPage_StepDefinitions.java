@@ -39,8 +39,8 @@ public class ManageClassPage_StepDefinitions {
 	mcp.ClickOnClass();
 	}
 
-	@Then("Admin should see URL with {string}")
-	public void admin_should_see_url_with(String string) {
+	@Then("Admin should see URL with {string} to class")
+	public void admin_should_see_url_with_to_class(String string) {
 		mcp.CheckOnManageClassLink();
 //		LOG.info("The user is in Manage Class Page");
 	}
@@ -62,8 +62,8 @@ public class ManageClassPage_StepDefinitions {
 	public void admin_clicks_class_button_on_the_navigation_bar() {
 		mcp.ClickOnClass();
 	}
-	@Then("Admin should see header with {string}")
-	public void admin_should_see_header_with(String string) {
+	@Then("Admin should see header with {string} too")
+	public void admin_should_see_header_with_too(String string) {
 		 
 		String actual=mcp.getPageTitle();
 		  
@@ -79,14 +79,14 @@ public class ManageClassPage_StepDefinitions {
 
 	}
 
-	@Then("Admin should see correct spelling for the all the fields")
-	public void admin_should_see_correct_spelling_for_the_all_the_fields() {
+	@Then("Admin should see correct spelling for the all the fields in manage class ")
+	public void admin_should_see_correct_spelling_for_the_all_the_fields_in_manage_class() {
 		mcp.GetAllText();
 	}
 
 //#@ValidateDeleteIcon(Given n when r already thr)
-	@Then("Admin should see disabled delete icon below the {string}")
-	public void admin_should_see_disabled_delete_icon_below_the(String string) {
+	@Then("Admin should see disabled delete icon below the {string} in class")
+	public void admin_should_see_disabled_delete_icon_below_the_in_class(String string) {
 		mcp.CheckDeleteAll();
 	}
 
@@ -111,20 +111,20 @@ public class ManageClassPage_StepDefinitions {
 	}
 
 //#@VerifyEditIcon
-	@Then("Edit Icon in each row of data table only when entries are available")
-	public void edit_icon_in_each_row_of_data_table_only_when_entries_are_available() {
+	@Then("Edit Icon in each row of class data table only when entries are available")
+	public void edit_icon_in_each_row_of_class_data_table_only_when_entries_are_available() {
 	mcp.verifyEditButton();
 	}
 
 //#@VerifyEditIconWithNoData
-	@Then("Edit Icon will not be present in data table")
-	public void edit_icon_will_not_be_present_in_data_table() {
+	@Then("Edit Icon will not be present in manage class data table")
+	public void edit_icon_will_not_be_present_in_manage_class_data_table() {
 		mcp.verifyEditButtonwithNodata();
 	}
 
 //#@VerifyDeleteIcon
-	@Then("Delete Icon in each row of data table only  when entries are available")
-	public void delete_icon_in_each_row_of_data_table_only_when_entries_are_available() {
+	@Then("Delete Icon in each row of manage class data table only  when entries are available")
+	public void delete_icon_in_each_row_of_manage_class_data_table_only_when_entries_are_available() {
 		mcp.verifyEditButton();
 	}
 
