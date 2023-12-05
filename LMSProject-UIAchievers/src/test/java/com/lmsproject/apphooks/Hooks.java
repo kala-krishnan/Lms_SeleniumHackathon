@@ -7,6 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.lmsproject.components.ExcelDataInputReader;
 import com.lmsproject.driverfactory.DriverManager;
 import com.lmsproject.utility.CommonUtils;
 
@@ -26,7 +27,7 @@ public class Hooks {
 	    	
 	    	try {
 	    		CommonUtils.loadProperties();
-	    		
+	    		ExcelDataInputReader.loadProperties();
 	    	
 	    	if(driver== null) {
 	    		driver = DriverManager.launchBrowser();

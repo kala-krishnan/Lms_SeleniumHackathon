@@ -35,22 +35,22 @@ public class ExcelFileReader {
 
 	
 
-	public static void getRowCount() {
-
-	try {
-
-		path=System.getProperty("user.dir");
-		workbook= new XSSFWorkbook(path+excelURL);
-		sheet= workbook.getSheet("Login");	
-		int rowCount= sheet.getPhysicalNumberOfRows();
-		}
-	catch(Exception exp) {
-		System.out.println(exp.getMessage());
-		System.out.println(exp.getCause());
-		exp.printStackTrace();
-		}
-
-	}
+//	public static void getRowCount() {
+//
+//	try {
+//
+//		path=System.getProperty("user.dir");
+//		workbook= new XSSFWorkbook(path+excelURL);
+//		sheet= workbook.getSheet("Login");	
+//		int rowCount= sheet.getPhysicalNumberOfRows();
+//		}
+//	catch(Exception exp) {
+//		System.out.println(exp.getMessage());
+//		System.out.println(exp.getCause());
+//		exp.printStackTrace();
+//		}
+//
+//	}
 
 	public static String getCellDataString(int rowNum, int cellNum) {
 

@@ -157,8 +157,7 @@ public class Addnewassignment_StepDefinitions {
 		@Then("selected date should be their in class date text box")
 		public void selected_date_should_be_their_in_class_date_text_box() {
 		    String text=mp.date();
-		   
-		    sa.assertFalse(text.isBlank());
+		    sa.assertFalse(text.isEmpty());
 		}
 
 		@Then("selected date should be in  mm\\/dd\\/yyyy format")

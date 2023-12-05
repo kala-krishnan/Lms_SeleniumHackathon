@@ -90,7 +90,7 @@ public class BatchPage_Pageobject {
 	
 	public BatchPage_Pageobject(WebDriver driver) {
 		this.driver = driver;
-		ExcelDataInputReader.loadProperties();
+		
 		PageFactory.initElements(driver, this);
 		comElement = new CommonWebElements(driver);
 		act = new Actions(driver);

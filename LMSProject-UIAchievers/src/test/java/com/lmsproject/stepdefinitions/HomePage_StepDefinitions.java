@@ -42,7 +42,7 @@ public class HomePage_StepDefinitions {
 	    String actual=hp.validSuccessHomepage();
 	  
 	    Assert.assertEquals("welcometopage",actual);
-	    driver.close();
+//	    driver.close();
 	}
 
 	@When("Admin gives the invalid LMS portal URL")

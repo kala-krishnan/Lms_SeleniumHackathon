@@ -65,8 +65,8 @@ public static WebDriver launchBrowser() {
 	return driver;
 }
 
-public WebDriver getDriver() {
-	return driver;
-}
+//public WebDriver getDriver() {
+//	return driver;
+//}
 
 }
